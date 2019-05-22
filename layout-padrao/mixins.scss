@@ -1,0 +1,23 @@
+//MIXINS
+
+// ----------------------------------------------------------------------
+// MEDIA QUERYS
+// ----------------------------------------------------------------------
+
+@mixin media_query($mq_min, $mq_max) {
+	@media screen and (min-width: $mq_min) and (max-width: $mq_max) {
+		@content;
+	}
+}
+
+@mixin media_tablet {
+	@media screen and (min-width: $mq_tablet_min) and (max-width: $mq_tablet_max) {
+		@content;
+	}
+}
+
+@mixin media_mobile {
+	@media screen and (min-width: $mq_mobile_min) and (max-width: $mq_mobile_max) {
+		@content;
+	}
+}

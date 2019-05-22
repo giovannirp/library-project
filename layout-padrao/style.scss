@@ -1,0 +1,127 @@
+* {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.wr-site {
+    .ct {
+        max-width: 1200px;
+        width: 100%;
+        margin: 0 auto;
+    }
+
+    .container {
+        header {
+            .ct {
+                display: flex;
+                align-items: center;
+
+                .logo {
+                    img {
+                        width: 100%;
+                    }
+                }
+
+                nav {
+                    width: 100%;
+                    height: 100%;
+                    height: 100%;
+
+                    ul {
+                        display: flex;
+                        //width: 100%;
+                        justify-content: flex-end;
+                        /*centralizar */
+
+                        li {
+                            padding-right: 20px;
+
+                            a {
+                                text-decoration: none;
+                                color: black;
+
+                                &:hover {
+                                    text-decoration: underline;
+                                    transition: all 0.5s ease;
+                                    color: pink;
+                                }
+                            }
+                        }
+                    }
+                }
+
+            }
+
+        }
+
+        .pg-home {
+            .carrocel {
+                img {
+                    width: 100%;
+                }
+            }
+
+            .content {
+                display: flex;
+
+                .bx-about,
+                .bx-about-publicity {
+                    width: 50%;
+                }
+
+                .bx-about {
+                    .bx-summary {
+                        h2 {
+                            font-size: 16px;
+                            margin: 20px;
+                            font-weight: bold;
+                        }
+
+                        p {
+                            margin: 20px;
+                            line-height: 21px;
+                        }
+                    }
+                }
+
+                .bx-about-publicity {
+                    .bx-summary-publicity {
+                        h2 {
+                            font-size: 16px;
+                            margin: 20px;
+                            font-weight: bold;
+                        }
+
+                        img {
+                            width: 100%;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+//@media (min-width: 320px) and (max-width: 1000px) {
+
+@media (max-width: 1000px) {
+    .wr-site {
+        .container {
+            .pg-home {
+                .carrocel{
+                    img {
+                        height: 250px;
+                    }
+                } 
+                .content {
+                    flex-direction: column;
+
+                    .bx-about,
+                    .bx-about-publicity {
+                        width: 99%;
+                    }
+                }
+            }
+        }
+    }
+}
+
