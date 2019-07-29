@@ -10,6 +10,13 @@
     }
 
     .container {
+        @media only screen and (max-width : 768px){ 
+            max-width: 540px;
+            margin: 0 auto;
+        }
+    }
+
+    .main {
         header {
             .ct {
                 display: flex;
@@ -60,6 +67,74 @@
                 }
             }
 
+            .coarse-main {
+                border: 1px solid orange;
+                display: flex;
+
+                @media only screen and (max-width : 768px){ 
+                    flex-direction: column;
+                    align-items: center;
+                }
+
+                .collCard {
+                    width: 33.333333%;
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                    justify-content: center;
+                    box-sizing: border-box;
+                    //max-width: 540px;
+
+                    @media only screen and (max-width : 768px){ 
+                        width: 100%;
+                        padding-right: 15px;
+                        padding-left: 15px;
+                    }
+
+                    h2 {
+                        font-size: 2rem;
+                        font-weight: 400;
+                        margin-bottom: 20px;
+                        margin-top: 20px;
+                        color: #5a5a5a;
+                    }
+
+                    p {
+                        line-height: 21px;
+                        margin-right: .75rem;
+                        margin-left: .75rem;
+                    }
+    
+
+                    .btn-call-card {
+                        text-decoration: none;
+                        display: inline-block;
+                        font-weight: 400;
+                        color: #212529;
+                        text-align: center;
+                        border: 1px solid transparent;
+                        padding: .375rem .75rem;
+                        font-size: 1rem;
+                        line-height: 1.5;
+                        border-radius: .25rem;
+                        margin-top: 20px;
+                        margin-bottom: 20px;
+
+                        &:hover {
+                            color: #fff;
+                            background-color: #5a6268;
+                            border-color: #545b62;
+                        }
+                    }
+
+                    .btn-secondary {
+                        color: #fff;
+                        background-color: #6c757d;
+                        border-color: #6c757d;
+                    }
+                }
+            }
+
             .content {
                 display: flex;
 
@@ -105,13 +180,14 @@
 
 @media (max-width: 1000px) {
     .wr-site {
-        .container {
+        .main {
             .pg-home {
-                .carrocel{
+                .carrocel {
                     img {
                         height: 250px;
                     }
-                } 
+                }
+
                 .content {
                     flex-direction: column;
 
@@ -124,4 +200,3 @@
         }
     }
 }
-
