@@ -65,7 +65,6 @@
 }
 
 .wr-site .main .pg-home .coarse-main {
-  border: 1px solid orange;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -160,6 +159,7 @@
 .wr-site .main .pg-home .content .bx-about,
 .wr-site .main .pg-home .content .bx-about-publicity {
   width: 50%;
+  margin-top: 20px;
 }
 
 .wr-site .main .pg-home .content .bx-about .bx-summary h2 {
@@ -181,6 +181,24 @@
 
 .wr-site .main .pg-home .content .bx-about-publicity .bx-summary-publicity img {
   width: 100%;
+}
+
+.wr-site footer {
+  border-top: 1px solid #e5e5e5;
+  padding: 50px;
+}
+
+.wr-site footer .wr-footer p {
+  font-family: arial;
+}
+
+.wr-site footer .wr-footer p a {
+  color: blue;
+  text-decoration: none;
+}
+
+.wr-site footer .wr-footer .float-right {
+  float: right;
 }
 
 @media (max-width: 1000px) {
