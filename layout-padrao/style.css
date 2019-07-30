@@ -8,6 +8,10 @@
   margin: 0 auto;
 }
 
+.wr-site .pg {
+  margin-top: 70px;
+}
+
 @media only screen and (max-width: 768px) {
   .wr-site .container {
     max-width: 540px;
@@ -22,42 +26,66 @@
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  /*
+                nav {
+                    width: 100%;
+                    height: 100%;
+                    height: 100%;
+
+                    ul {
+                        display: flex;
+                        justify-content: flex-end;
+
+                        li {
+                            padding-right: 20px;
+
+                            a {
+                                text-decoration: none;
+                                color: black;
+
+                                &:hover {
+                                    text-decoration: underline;
+                                    transition: all 0.5s ease;
+                                    color: pink;
+                                }
+                            }
+                        }
+                    }
+                }
+                */
 }
 
 .wr-site .main header .ct .logo img {
   width: 100%;
 }
 
-.wr-site .main header .ct nav {
+.wr-site .main header nav {
+  background: #343a40;
+  height: 56px;
   width: 100%;
-  height: 100%;
-  height: 100%;
-}
-
-.wr-site .main header .ct nav ul {
+  position: fixed;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: end;
-      -ms-flex-pack: end;
-          justify-content: flex-end;
-  /*centralizar */
 }
 
-.wr-site .main header .ct nav ul li {
-  padding-right: 20px;
+.wr-site .main header nav ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
-.wr-site .main header .ct nav ul li a {
+.wr-site .main header nav ul li a {
+  color: #fff;
+  padding-right: 40px;
   text-decoration: none;
-  color: black;
 }
 
-.wr-site .main header .ct nav ul li a:hover {
+.wr-site .main header nav ul li a:hover {
   text-decoration: underline;
-  -webkit-transition: all 0.5s ease;
-  transition: all 0.5s ease;
-  color: pink;
 }
 
 .wr-site .main .pg-home .carrocel img {
