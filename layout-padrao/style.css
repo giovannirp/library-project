@@ -12,11 +12,19 @@
   margin-top: 70px;
 }
 
+.wr-site .pg-leaning {
+  padding-top: 56px;
+}
+
 @media only screen and (max-width: 768px) {
   .wr-site .container {
     max-width: 540px;
     margin: 0 auto;
   }
+}
+
+.wr-site .main {
+  /* page details */
 }
 
 .wr-site .main header .ct {
@@ -26,33 +34,6 @@
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  /*
-                nav {
-                    width: 100%;
-                    height: 100%;
-                    height: 100%;
-
-                    ul {
-                        display: flex;
-                        justify-content: flex-end;
-
-                        li {
-                            padding-right: 20px;
-
-                            a {
-                                text-decoration: none;
-                                color: black;
-
-                                &:hover {
-                                    text-decoration: underline;
-                                    transition: all 0.5s ease;
-                                    color: pink;
-                                }
-                            }
-                        }
-                    }
-                }
-                */
 }
 
 .wr-site .main header .ct .logo img {
@@ -67,6 +48,7 @@
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  top: 0;
 }
 
 .wr-site .main header nav ul {
@@ -209,6 +191,83 @@
 
 .wr-site .main .pg-home .content .bx-about-publicity .bx-summary-publicity img {
   width: 100%;
+}
+
+.wr-site .main .pg-details {
+  background: #f8f9fa;
+}
+
+.wr-site .main .pg-details .carrocelDetails {
+  background: #fff;
+  height: 408px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+}
+
+.wr-site .main .pg-details .carrocelDetails h1 {
+  font-size: 2.5rem;
+  color: #212529;
+  margin-bottom: 20px;
+}
+
+.wr-site .main .pg-details .carrocelDetails p {
+  font-size: 17px;
+  font-weight: 300;
+  color: #6c757d !important;
+  line-height: 26px;
+  max-width: 610px;
+  margin: 0 auto;
+  margin-bottom: 20px;
+}
+
+.wr-site .main .pg-details .carrocelDetails .buttonsCarrocel {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.wr-site .main .pg-details .carrocelDetails .buttonsCarrocel a {
+  color: #fff;
+  background-color: #007bff;
+  border-color: #007bff;
+  width: 152px;
+  height: 38px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-decoration: none;
+  border-radius: 5px;
+  margin-right: 20px;
+}
+
+.wr-site .main .pg-details .carrocelDetails .buttonsCarrocel a:hover {
+  color: #fff;
+  background-color: #0069d9;
+  border-color: #0062cc;
+}
+
+.wr-site .main .pg-details .carrocelDetails .buttonsCarrocel a:last-child {
+  background: #6c757d;
+}
+
+.wr-site .main .pg-details .carrocelDetails .buttonsCarrocel a:last-child:hover {
+  color: #fff;
+  background-color: #5a6268;
+  border-color: #545b62;
 }
 
 .wr-site footer {
